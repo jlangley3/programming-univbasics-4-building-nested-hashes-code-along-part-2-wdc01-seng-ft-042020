@@ -19,6 +19,8 @@ def update_status
          ]
       }
    }
+  epic_tragedy[:montague][:hero][:status] = ("dead")
+  epic_tragedy[:capulet][:heroine][:status] = ("dead")
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
@@ -40,6 +42,9 @@ def add_characters
             {name: "Benvolio", age: "17", attitude: "worried"},
             {name: "Mercutio", age: "18", attitude: "hot-headed"}
          ]
+       
+           
+         
       },
       :capulet => {
          :patriarch => {name: "Lord Capulet", age: "50"},
@@ -51,7 +56,13 @@ def add_characters
          ]
       }
    }
-
+   
+     
+  epic_tragedy[:additional_characters] = [
+           {:name =>"Prince Escalus"}, 
+           {:name => "Apothecary"}
+           ]
+           
    # Write code below that does the following programmatically:
    #
    # - Add an additional :additional_characters key to epic_tragedy and assign it an array as its value
